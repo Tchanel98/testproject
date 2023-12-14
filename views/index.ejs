@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Gym Name</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+            font-family: Arial, sans-serif;
+            background-color: #e7f2f8;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        #weather-info {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 8px;
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            text-align: left;
+        }
+
+        #weather-info p {
+            margin: 5px 0;
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        #weather-info img {
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+    </style>
+
+  </head>
+  <body class="bg-gray-100 text-gray-800">
+    <div id="weather-info"></div>
+    <!-- Navbar -->
+    <nav class="bg-white shadow-lg">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between items-center py-4">
+          <!-- Logo and navigation links on the left -->
+          <div class="flex space-x-7 items-center">
+            <!-- Website Logo -->
+            <a href="#" class="flex items-center py-4 px-2">
+              <span class="font-semibold text-gray-500 text-lg">Your Gym</span>
+            </a>
+            <!-- Primary Navbar items -->
+            <div class="hidden md:flex items-center space-x-1">
+              <a
+                href="/"
+                class="py-4 px-2 text-green-500 border-b-4 border-green-500 font-semibold"
+                >Home</a
+              >
+              <a
+                href="/classes"
+                class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300"
+                >Classes</a
+              >
+              <a
+                href="/services"
+                class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300"
+                >Services</a
+              >
+              <a
+                href="/about"
+                class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300"
+                >About</a
+              >
+              <a
+                href="/contact"
+                class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300"
+                >Contact</a
+              >
+            </div>
+          </div>
+
+          <!-- Profile icon and authentication links on the right -->
+          <div class="flex items-center space-x-3">
+            <!-- Profile Icon -->
+            <a
+              href="/profile"
+              class="flex items-center py-2 px-2 text-gray-500 hover:text-green-500 transition duration-300"
+            >
+              <svg
+                class="h-6 w-6 fill-current"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 132.69 124.91"
+              >
+                <path
+                  d="M132.15,124.41H.54c2.13-27.09,30.78-48.55,65.81-48.55s63.67,21.46,65.8,48.55Z"
+                />
+                <circle cx="64.17" cy="34.56" r="34.06" />
+              </svg>
+            </a>
+            <!-- Login & Sign Up -->
+            <a
+              href="/login"
+              class="py-2 px-2 font-medium text-gray-500 rounded hover:bg-green-500 hover:text-white transition duration-300"
+              >Log In</a
+            >
+            <a
+              href="/register"
+              class="py-2 px-2 font-medium text-white bg-green-500 rounded hover:bg-green-400 transition duration-300"
+              >Sign Up</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="bg-white">
+      <div class="max-w-5xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+        <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+          <span class="block">Ready to get in shape?</span>
+          <span class="block text-green-600"
+            >Join our fitness community now!</span
+          >
+        </h2>
+        <div class="mt-8 flex lg:flex-shrink-0 lg:mt-0">
+          <div class="inline-flex rounded-md shadow">
+            <a
+              href="/register"
+              class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-green-600 hover:bg-green-700"
+            >
+              Get Started
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <section class="text-gray-600 body-font">
+      <div
+        class="container mx-auto flex px-5 py-24 items-center justify-center flex-col"
+      >
+        <img
+          class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded"
+          alt="hero"
+          src="path_to_your_image"
+        />
+        <div class="text-center lg:w-2/3 w-full">
+          <h1
+            class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900"
+          >
+            Unleash Your Potential
+          </h1>
+          <p class="mb-8 leading-relaxed">
+            Join our community of fitness enthusiasts and professionals to push
+            your limits and achieve your personal best!
+          </p>
+          <div class="flex justify-center">
+            <a
+              href="/about"
+              class="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg"
+              >Learn More</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-gray-600 body-font">
+      <div
+        class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col"
+      >
+        <a
+          class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900"
+        >
+          <span class="ml-3 text-xl">Your Gym</span>
+        </a>
+        <p class="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">
+          © 2023 Your Gym —
+          <a
+            href="/contact"
+            class="text-gray-600 ml-1"
+            rel="noopener noreferrer"
+            target="_blank"
+            >@contact</a
+          >
+        </p>
+        <span
+          class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start"
+        >
+          <a href="#" class="text-gray-500">
+            <svg
+              fill="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              class="w-5 h-5"
+              viewBox="0 0 24 24"
+            >
+              <!-- SVG icon code -->
+            </svg>
+          </a>
+          <!-- Add more social icons if needed -->
+        </span>
+      </div>
+    </footer>
+
+    <script>
+       function getWeatherEmoji(weatherData) {
+            const main = weatherData.weather[0].main;
+
+            switch (main) {
+                case 'Clear':
+                    return '☀️';
+                case 'Clouds':
+                    return weatherData.clouds.all > 50 ? '☁️' : '⛅';
+                case 'Rain':
+                    return '🌧️';
+                case 'Drizzle':
+                    return '🌦️';
+                case 'Thunderstorm':
+                    return '⛈️';
+                case 'Snow':
+                    return '❄️';
+                case 'Mist':
+                case 'Smoke':
+                case 'Haze':
+                case 'Dust':
+                case 'Fog':
+                    return '🌫️';
+                case 'Tornado':
+                    return '🌪️';
+                default:
+                    return '🌡️'; // Generic fallback for other conditions
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('/weather')
+                .then(response => response.json())
+                .then(data => {
+                    const weatherInfo = document.getElementById('weather-info');
+                    const emoji = getWeatherEmoji(data);
+                    weatherInfo.innerHTML = `
+                        <p><img src="http://openweathermap.org/img/w/${data.weather[0].icon}.png" alt="Weather icon">${emoji} ${data.weather[0].description}</p>
+                        <p>Temperature: ${data.main.temp}°C</p>
+                    `;
+                })
+                .catch(error => console.error('Error fetching weather:', error));
+        });
+    </script>
+
+  </body>
+</html>

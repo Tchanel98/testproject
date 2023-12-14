@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Class</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <!-- Navigation Bar Here -->
+
+    <!-- Class Creation Form -->
+    <section class="text-gray-600 body-font relative">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-col text-center w-full mb-12">
+                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Create a New Class</h1>
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Fill in the details for your new class.</p>
+            </div>
+            <div class="lg:w-1/2 md:w-2/3 mx-auto">
+                <form action="/api/classes" method="post" class="flex flex-wrap -m-2">
+                    <!-- Title -->
+                    <div class="p-2 w-full">
+                        <label for="title" class="leading-7 text-sm text-gray-600">Title</label>
+                        <input type="text" id="title" name="title" required class="w-full bg-gray-100 rounded border border-gray-300 focus:border-green-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                    </div>
+                    <!-- Description -->
+                    <div class="p-2 w-full">
+                        <label for="description" class="leading-7 text-sm text-gray-600">Description</label>
+                        <textarea id="description" name="description" required class="w-full bg-gray-100 rounded border border-gray-300 focus:border-green-500 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                    </div>
+                    <!-- Max Participants -->
+                    <div class="p-2 w-1/2">
+                        <label for="max_participants" class="leading-7 text-sm text-gray-600">Max Participants</label>
+                        <input type="number" id="max_participants" name="max_participants" required class="w-full bg-gray-100 rounded border border-gray-300 focus:border-green-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                    </div>
+                    <!-- Duration -->
+                    <div class="p-2 w-1/2">
+                        <label for="duration" class="leading-7 text-sm text-gray-600">Duration (minutes)</label>
+                        <input type="number" id="duration" name="duration" required class="w-full bg-gray-100 rounded border border-gray-300 focus:border-green-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                    </div>
+                    <!-- Start Time -->
+                    <div class="p-2 w-1/2">
+                        <label for="start_time" class="leading-7 text-sm text-gray-600">Start Time</label>
+                        <input type="datetime-local" id="start_time" name="start_time" required class="w-full bg-gray-100 rounded border border-gray-300 focus:border-green-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                    </div>
+                    <!-- End Time -->
+                    <div class="p-2 w-1/2">
+                        <label for="end_time" class="leading-7 text-sm text-gray-600">End Time</label>
+                        <input type="datetime-local" id="end_time" name="end_time" required class="w-full bg-gray-100 rounded border border-gray-300 focus:border-green-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                    </div>
+                    <!-- Submit Button -->
+                    <div class="p-2 w-full">
+                        <button type="submit" class="flex mx-auto text-white bg-green-500 border-0 py-2 px-8 focus:outline-none hover:bg-green-600 rounded text-lg">Create Class</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Here -->
+</body>
+</html>
