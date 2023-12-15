@@ -1,4 +1,4 @@
-# **Project Name: [Your Project's Name]**
+# **Project Name: The Gym App**
  
 ## **Description**
  
